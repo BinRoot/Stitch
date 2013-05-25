@@ -1,12 +1,46 @@
+<!-- 
+Notes: 
+ - get fotorama licence: http://fotoramajs.com/license/
+-->
+
+<!DOCTYPE html>
 <html>
-  <body style="background-color:#cccc77">
-    Login<br>
-    <table>
-      <form method="GET" action="/">
-	<tr><td>Username:</td><td><input type="text" name="user"></td></tr>
-	<tr><td>Password:</td><td><input type="password" name="pass"></td></tr>
-	<tr><td></td><td><input type="submit" name="submit" value="Login"></td></tr>
-      </form>
-    </table>
+  <head>
+    <title>Equilibrium</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="/css/fotorama.css" rel="stylesheet" media="screen">
+    <link href="/css/index.css" rel="stylesheet" media="screen">
+  </head>
+
+  <body>
+    
+    <div class="navbar">
+      <div class="navbar-inner">
+	<a class="brand" href="#">Equilibrium</a>
+	
+	<ul class="nav pull-right">
+	  <li class="divider-vertical"><a href="#">About</a></li>
+	  <li class="divider-vertical"><a href="#">Contact</a></li>
+	  <li class="divider-vertical"><a href="#">Donate</a></li>
+	  <li class="divider-vertical"><a href="#">Log in</a></li>
+	</ul>
+      </div>
+    </div>
+
+    <div class="fotorama" data-width="800" data-height="400">
+      <a rel="/img/02.jpg" href="http://reddit.com"><img src="/img/01.jpg"></a>
+      <img src="/img/02.jpg">
+      <img src="/img/03.jpg">
+      <img src="/img/04.jpg">
+      <img src="/img/05.jpg">
+      <img src="/img/06.jpg">
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/fotorama.js"></script>
   </body>
+  
 </html>
+
