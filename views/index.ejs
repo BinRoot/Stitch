@@ -1,24 +1,23 @@
-<!-- 
-Notes: 
- - get fotorama licence: http://fotoramajs.com/license/
--->
-
 <!DOCTYPE html>
 <html>
   <head>
     <title>Equilibrium</title>
-    <link href="/css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="/css/fotorama.css" rel="stylesheet" media="screen">
-    <link href="/css/index.css" rel="stylesheet" media="screen">
+    <link href="/css/bootstrap.css" rel="stylesheet" media="screen"/>
+    <link href="/css/index.css" rel="stylesheet" media="screen"/>
+    <link href="css/supersized.css" rel="stylesheet" media="screen"/>
+    <link href="theme/supersized.shutter.css" rel="stylesheet" media="screen"/>
   </head>
 
   <body>
     
     <div class="navbar">
       <div class="navbar-inner">
-	<a class="brand" href="#">Equilibrium</a>
+
+	<a class="brand" href="#">
+	  <img id="icon" src="/img/world.png" class="divider-vertical">
+	Equilibrium</a>
 	
-	<ul class="nav pull-right">
+	<ul id="nav-buttons" class="nav pull-right">
 	  <li class="divider-vertical"><a href="#">About</a></li>
 	  <li class="divider-vertical"><a href="#">Contact</a></li>
 	  <li class="divider-vertical"><a href="#">Donate</a></li>
@@ -27,20 +26,75 @@ Notes:
       </div>
     </div>
 
-    <div class="fotorama" data-width="800" data-height="400">
-      <a rel="/img/02.jpg" href="http://reddit.com"><img src="/img/01.jpg"></a>
-      <img src="/img/02.jpg">
-      <img src="/img/03.jpg">
-      <img src="/img/04.jpg">
-      <img src="/img/05.jpg">
-      <img src="/img/06.jpg">
+    <div id="main-block">
 
+      <div id="tag-line">
+	<h2>Connecting hospitals together to share vital resources.</h2>
+      </div>
+
+      
+      <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices mattis magna et volutpat. Duis leo augue, adipiscing ut vulputate sit amet, ultrices id nisl. Nunc egestas pulvinar libero quis vestibulum. 
+      </p>
+      <p>
+Cras velit leo, ornare vel volutpat a, egestas nec elit. Mauris ornare, magna eget dapibus ullamcorper, nisl lectus feugiat libero, ac pretium ante nisi vitae leo. Sed rhoncus sapien nec ante ullamcorper pellentesque.
+      </p>
     </div>
+    
+    <!--End of styles-->
+
+    <!--Thumbnail Navigation-->
+    <div id="prevthumb"></div>
+    <div id="nextthumb"></div>
+    
+    <!--Arrow Navigation-->
+    <a id="prevslide" class="load-item"></a>
+    <a id="nextslide" class="load-item"></a>
+    
+    <div id="thumb-tray" class="load-item">
+      <div id="thumb-back"></div>
+      <div id="thumb-forward"></div>
+    </div>
+    
+    <!--Time Bar-->
+    <div id="progress-back" class="load-item">
+      <div id="progress-bar"></div>
+    </div>
+    
+    <!--Control Bar-->
+    <div id="controls-wrapper" class="load-item">
+      <div id="controls">
+	
+	<a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+	
+	<!--Slide counter-->
+	<div id="slidecounter">
+	    <span class="slidenumber"></span> / <span class="totalslides"></span>
+	    </div>
+	
+	<!--Slide captions displayed here-->
+	<div id="slidecaption"></div>
+	
+	<!--Thumb Tray button-->
+	<a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
+	
+	<!--Navigation-->
+	<ul id="slide-list"></ul>
+	
+      </div>
+    </div>
+
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/fotorama.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="/js/supersized.3.2.7.min.js"></script>
+    <script type="text/javascript" src="/js/index-supersized.js"></script>
+    <script type="text/javascript" src="/theme/supersized.shutter.min.js"></script>
+
   </body>
   
+
+
 </html>
 
