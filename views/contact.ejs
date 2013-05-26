@@ -4,6 +4,7 @@
     <title>About Equilibrium</title>
     <link href="/css/bootstrap.css" rel="stylesheet" media="screen"/>
     <link href="/css/index.css" rel="stylesheet" media="screen"/>
+    <link href="/css/contact.css" rel="stylesheet" media="screen"/>
     <link href="/css/about.css" rel="stylesheet" media="screen"/>
   </head>
 
@@ -28,54 +29,45 @@
 
     <div id="main-block">
 
-      <div class="hero-unit" style="background: url(/img/white-background.jpg) no-repeat; background-size: cover; background-position:center; ">
+      <div class="hero-unit" style="background: url(/img/whiteback.png) no-repeat; background-size: cover; background-position:center; ">
 	<h2 >Contact our Team</h2>
-	<p>Ask a question, request an invitation, or provide us feedback.</p>
-	<p>We will respond promptly within 24-hours.</p>
       </div>
+
+      <table class="table table-hover">
+	<tr>
+	  <td class="contact-type"><h4>Headquarters:</h4></td>
+	  <td><h4>123 Hospital Road, Cincinnati, OH</h4></td>
+	</tr>
+	<tr>
+	  <td class="contact-type"><h4>Phone:</h4></td>
+	  <td><h4>123-456-7890</h4></td>
+	</tr>
+	<tr>
+	  <td class="contact-type"><h4>Email:</h4></td>
+	  <td><h4>hello@equilibrium.io</h4></td>
+	</tr>
+
+      </table>
       
-      <form class="form-horizontal">
-	<div class="control-group">
-	  <label class="control-label" for="inputHeadquarters">Headquarters</label>
-	  <div class="controls">
-	    <input type="text" class="input-xxlarge" id="inputHeadquarters" placeholder="123 Hospital Road, Mountain View, CA">
-	  </div>
-	</div>
-
-	<div class="control-group">
-	  <label class="control-label" for="inputPhone">Phone</label>
-	  <div class="controls">
-	    <input type="text" class="input-large" id="inputPhone" placeholder="123-456-7890">
-	  </div>
-	</div>
-
-	<div class="control-group">
-	  <label class="control-label" for="inputEmail">Email</label>
-	  <div class="controls">
-	    <input type="text" id="inputEmail" placeholder="me@email.com">
-	  </div>
-	</div>
-
-	<div class="control-group">
-	  <label class="control-label" for="inputMessage">Message</label>
-	  <div class="controls">
-	    <textarea id="inputMessage" class="input-xxlarge" rows="4" placeholder="We are interested in joining Equilibrium."></textarea>
-	  </div>
-	</div>
-
-
-      </form>
-
-      <center>
-	<button class="btn btn-primary">Send</button>
-      </center>
-
-      <hr>
-
+      <div id="map-canvas"/>
     </div>
 
+    <hr>
 
-
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0K7mmuTqoDGoTqrFobadfgihnAyJp2oQ&sensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(39.1619, -84.4569),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="/js/bootstrap.min.js"></script>
   </body>
