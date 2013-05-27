@@ -1,0 +1,23 @@
+#progress-status {
+    font-weight: bold;
+    text-align: center;
+    z-index: -1;
+}
+
+#progress {
+    background-color:gray; height:20px;
+}
+
+#progress-text {
+    margin-top: -40px; // provide buffer for logo
+    text-align:right;
+    float: right;
+    color: white;
+    margin-right: 10px;
+}
+
+.pay-option:hover {
+    background-color: #dddddd;
+    cursor: hand;
+    cursor: pointer; 
+}

@@ -16,6 +16,10 @@ app.get('/contact', function(request, response) {
     response.render('contact.ejs', {});
 });
 
+app.get('/donate', function(request, response) {
+    response.render('donate.ejs', {});
+});
+
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
     console.log("Listening on " + port);
