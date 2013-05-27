@@ -1,0 +1,12 @@
+.sidenav {
+    width: 200px;
+    height: 50px;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.mactive {
+    background-color: #4444ff;
+}

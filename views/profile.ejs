@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Equilibrium</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" media="screen"/>
+    <link href="/css/index.css" rel="stylesheet" media="screen"/>
+    <link href="/css/about.css" rel="stylesheet" media="screen"/>
+    <link href="/css/profile.css" rel="stylesheet" media="screen"/>
+  </head>
+
+  <body>
+    
+    <div class="navbar">
+      <div class="navbar-inner">
+
+	<a class="brand" href="/">
+	  <img id="icon" src="/img/world.png" class="divider-vertical">
+	  Equilibrium
+	</a>
+	
+	<ul id="nav-buttons" class="nav pull-right">
+	  <li class="divider-vertical"><a href="/about">About</a></li>
+	  <li class="divider-vertical"><a href="/contact">Contact</a></li>
+	  <li class="divider-vertical"><a href="/donate">Donate</a></li>
+	  <li class="divider-vertical"><a href="/login">Log in</a></li>
+	</ul>
+      </div>
+    </div>
+
+    <div id="main-block">
+
+      <div class="row">
+	<div class="span3">
+	  <div id="buttons" class="btn-group btn-group-vertical">
+	    <button class="btn btn-primary sidenav mactive">Profile</button>
+	    <button class="btn btn-primary sidenav">Partners</button>
+	    <button class="btn btn-primary sidenav">Resources</button>
+	    <button class="btn btn-primary sidenav">Statistics</button>
+	  </div>
+	</div>
+	<div id="panes" class="span7">
+	  <div id="profile-pane">
+	    profile
+	  </div>
+	  <div id="partners-pane" style="display:none;">
+	    partners
+	  </div>
+	  <div id="resources-pane" style="display:none;">
+	    resources
+	  </div>
+	  <div id="statistics-pane" style="display:none;">
+	    statistics
+	  </div>
+
+	</div>
+      </div>
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/profile.js"></script>
+  </body>
+
+</html>
