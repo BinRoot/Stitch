@@ -32,24 +32,24 @@
       <div class="row">
 	<div class="span3">
 	  <div id="buttons" class="btn-group btn-group-vertical">
-	    <button class="btn btn-primary sidenav mactive">Profile</button>
-	    <button class="btn btn-primary sidenav">Partners</button>
-	    <button class="btn btn-primary sidenav">Resources</button>
-	    <button class="btn btn-primary sidenav">Statistics</button>
+	    <button class="btn btn-primary sidenav mactive">Profile <i class="icon-play icon-white" style="display:normal;"></i></button>
+	    <button class="btn btn-primary sidenav">Partners  <i class="icon-play icon-white" style="display:none;"></i></button>
+	    <button class="btn btn-primary sidenav">Resources  <i class="icon-play icon-white" style="display:none;"></i></button>
+	    <button class="btn btn-primary sidenav">Statistics  <i class="icon-play icon-white" style="display:none;"></i></button>
 	  </div>
 	</div>
 	<div id="panes" class="span7">
 	  <div id="profile-pane">
-	    profile
+	    <% include mProfile %>
 	  </div>
 	  <div id="partners-pane" style="display:none;">
-	    partners
+	    <% include mPartners %>
 	  </div>
 	  <div id="resources-pane" style="display:none;">
-	    resources
+	    <% include mResources %>
 	  </div>
 	  <div id="statistics-pane" style="display:none;">
-	    statistics
+	    <% include mStatistics %>
 	  </div>
 
 	</div>
